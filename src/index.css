@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,'Prata' 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assests/Images/NY-bg-10-up.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Ensures the background stays fixed */
+  height: 100%;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.feature-items{
+  width: 50%;
+  display: flex;
+}
+.feature-items p{
+  width: 70%;
+}
+
+.feature-item{
+  width: 50%;
+}
+.feature-item p{
+  width: 70%;
+}
+
+
+.specilishedBox{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+position: relative;
+width: 34px;
+padding-bottom: 11%;
+overflow: hidden;
+background: #3a3b3c;
+border-radius: 4px;
+height: 33px;
+}
+
+
+/* section 5 complience */
+
+.timeline-container {
+  position: relative;
+  width: 90%; /* Adjust based on the design */
+  /* margin: 50px auto; */
+  /* padding: 10px; */
+  margin-top: -100px;
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+  z-index: 1;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+
+.milestone {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 152px;
+}
+
+.number {
+  display: inline-block;
+  position: relative;
+  background-color: #3a3b3c; /* Number background color */
+  color: white;
+  font-size: 27px;
+  width: 46px;
+  height: 40px;
+  /* line-height: 30px; */
+  border-radius: 3px;
+  /* border-radius: 50%; */
+  z-index: 2;
+  /* margin-bottom: 10px; */
+}
+
+.vertical-line {
+  width: 2px;
+  height: 50px;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #CFCBBF;
+}
+.paragraph {
+  font-size: 1em;
+  color: #cfcbbf;
+  text-align: center;
+  max-width: 200px;
+  line-height: 1.6;
+  margin-top: 1.125em;
+}
+
+
+/* Arrow container */
+
+
+
+.tabBox {
+  background: #3a3b3c;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  line-height: 77px;
+}
+
+.tabBox:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 40px solid #3a3b3c;
+  border-left-color: transparent;
+  left: -40px;
+}
+
+.tabBox:after{
+  content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 40px solid #1B1C1D;
+    border-left-color: transparent;
+    right: -20px;
+}
+
+.naturalParagraph{
+  font-size: 1em;
+  color: #cfcbbf;
+  text-align: left;
+
+  line-height: 1.6;
+  margin-top: 1em;
+}
+
+/* QuantaNerver */
+
+
+
+
+
+
+
+/* new pyramid design */
+.pyramid_text{
+  margin-left: 20px;
+  width: 62%;
+  border-bottom: .5px solid #535455;
+}
+
+.pyramid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  /* width: 80%; */
+}
+
+.pyramid-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.pyramid-row.top .pyramid-item {
+  width: 200px;
+}
+
+.pyramid-row.middle .pyramid-item {
+  width: 180px;
+  margin: 0 15px;
+}
+
+.pyramid-row.bottom .pyramid-item {
+  width: 150px;
+  margin: 0 10px;
+}
+
+.pyramid-item {
+  text-align: center;
+  background: linear-gradient(135deg, #AE8625, #F7EF8A);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pyramid-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* last section */
+
+/* Container for the boxes */
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  /* width: 600px; */
+  margin: 20px auto;
+}
+
+/* Base styling for each box */
+.box {
+  display: flex;
+  align-items: center;
+  background-color: #3a3b3c;
+  border-radius: 3px;
+  position: relative;
+  color: #fff;
+}
+
+/* Numbering inside each box */
+.box-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  /* background-color: #ae8625; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50%; */
+  margin-right: 16px;
+}
+
+/* Text placed beside each box */
+.box-text h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: #cfcbbf;
+  padding-top: 28px;
+}
+
+.box-text p {
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #cfcbbf;
+  padding-top: 8px;
+}
+
+
+/* Sizes of the boxes */
+.box.small {
+  height: 100px;
+  width: 200px;
+}
+
+.box.medium {
+  height: 100px;
+  width: 300px;
+}
+
+.box.large {
+  height: 100px;
+  width: 400px;
+}
+
+/* Align the text to the right of the boxes */
+.box {
+  padding-right: 20px;
+}
+
+.box-text {
+  margin-left: 20px;
+  width: 62%;
+  /* border-bottom: .5px solid #535455; */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .box-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .box.small,
+  .box.medium,
+  .box.large {
+    width: 100%;
+  }
+
+  .box-text h3 {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Tringle svg */
+
+.tringle-container{
+  margin-top: 40px;
+}
+.css-1wovuj0 {
+  /* position: absolute; */
+    inset: 0px;
+    overflow: visible;
+    width: 512.312px;
+    height: 103.719px;
+}
+.css-si9yvt{
+  inset: 0px;
+    overflow: visible;
+    width: 341.547px;
+    height: 103.719px;
+}
+.css-11shz5c{
+  inset: 0px;
+    overflow: visible;
+    width: 170.766px;
+    height: 103.719px;
+}
+ .bottomLine{
+  margin-left: 20px;
+  width:50%;
+  border-bottom: 2px solid #535455;
+}
+
+
+.tringleText h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: #cfcbbf;
+  padding-top: 28px;
+}
+
+.tringleText p {
+  font-size: 1em;
+  line-height: 1.25em;
+  color: #cfcbbf;
+  padding-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
