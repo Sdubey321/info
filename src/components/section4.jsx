@@ -1,11 +1,13 @@
 import React from 'react'
 import customITSolutions from '../assests/Images/8-um8V0Hg-_pJjMheEhOK.avif'
+import { Settings, Plug, UserCheck } from "lucide-react";
+
 
 
 export default function section4() {
     return (
         <>
-            <div className='shadow-lg bg-[#1B1C1D] flex justify-normal w-[70%] mx-auto gap-16 mt-10'>
+            {/* <div className='shadow-lg bg-[#1B1C1D] flex justify-normal w-[70%] mx-auto gap-16 mt-10'>
                 <div className='w-[40%]'>
                     <img src={customITSolutions} alt='image' className=' h-full w-full' />
                 </div>
@@ -31,6 +33,45 @@ export default function section4() {
 
                             <h3 className='text-2xl text-[#cfcbbf] font-medium font-[Prata]'>Dedicated Support</h3>
                             <p className='pt-3 text-lg text-[#cfcbbf] font-[Raleway]'>Expert assistance every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="bg-[#1B1C1D] text-white py-16 px-6 w-[70%] mx-auto mt-10 rounded-2xl">
+                <div className="container mx-auto text-center space-y-10">
+                    {/* Heading */}
+                    <h2 className="text-5xl font-extrabold bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#D2AC47] text-transparent bg-clip-text font-[Prata] leading-[1.25]">
+                        Custom IT Solutions to Navigate Complexity
+                    </h2>
+
+                    {/* Features Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                        {/* Feature 1 */}
+                        <div className="flex flex-col items-center text-center space-y-4">
+                            <Settings className="w-12 h-12 text-yellow-400 hover:fill-yellow-400" />
+                            <h3 className="text-2xl font-semibold">Tailored Solutions</h3>
+                            <p className="text-gray-300 text-base font-[Raleway]">
+                                Customized for your specific legal needs.
+                            </p>
+                        </div>
+
+                        {/* Feature 2 */}
+                        <div className="flex flex-col items-center text-center space-y-4">
+                            <Plug className="w-12 h-12 text-yellow-400 hover:fill-yellow-400" />
+                            <h3 className="text-2xl font-semibold">Seamless Integration</h3>
+                            <p className="text-gray-300 text-base font-[Raleway]">
+                                Works seamlessly with existing systems.
+                            </p>
+                        </div>
+
+                        {/* Feature 3 */}
+                        <div className="flex flex-col items-center text-center space-y-4">
+                            <UserCheck className="w-12 h-12 text-yellow-400 hover:fill-yellow-400" />
+                            <h3 className="text-2xl font-semibold">Dedicated Support</h3>
+                            <p className="text-gray-300 text-base font-[Raleway]">
+                                Expert assistance every step of the way.
+                            </p>
                         </div>
                     </div>
                 </div>

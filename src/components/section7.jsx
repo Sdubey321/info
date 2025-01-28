@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function section7() {
     return (
-        <div className='shadow-lg bg-[#1B1C1D] justify-normal w-[70%] mx-auto mt-10'>
-            <div className='ml-[7%] py-10'>
-                <p className='font-medium text-5xl text-left bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#D2AC47] inline-block text-transparent bg-clip-text  font-[Prata] leading-[1.25]'>Why Choose QuantaNerver: Domain Expertise</p>
+        <div className='shadow-lg bg-[#1B1C1D] justify-normal w-[70%] mx-auto mt-10 rounded-2xl'>
+            <div className='py-10'>
+                <p className='font-medium text-5xl text-left bg-gradient-to-r from-[#AE8625] via-[#F7EF8A] to-[#D2AC47] inline-block text-transparent bg-clip-text  font-[Prata] leading-[1.25] ml-[7%]'>Why Choose QuantaNerver: Domain Expertise</p>
                 {/* this is recommaded design from my side */}
-                {/* <div class="pyramid-container">
+                <div class="pyramid-container">
                     <div class="pyramid-row top">
                         <div class="pyramid-item">Legal Profession</div>
                     </div>
@@ -19,9 +19,9 @@ export default function section7() {
                         <div class="pyramid-item">Innovation</div>
                         <div class="pyramid-item">Excellence</div>
                     </div>
-                </div> */}
+                </div>
 
-                <div className='tringle-container'>
+                {/* <div className='tringle-container'>
                     <div className='flex'>
                         <div className='pl-[171px] pb-1'>
                             <svg contenteditable="false" data-testid="trapezoid-svg" class="css-11shz5c"><path d="
@@ -64,7 +64,7 @@ export default function section7() {
                             <p className='font-[Raleway] text-lg'>Dedicated to meeting your specific needs</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
 

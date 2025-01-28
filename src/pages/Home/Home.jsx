@@ -7,6 +7,10 @@ import Fifth from '../../components/section5'
 import Sixth from '../../components/section6'
 import Seventh from '../../components/section7'
 import Eight from '../../components/section8'
+import Footer from '../../components/footer'
+import Header from '../../components/header'
+
+
 
 
 
@@ -14,6 +18,7 @@ export default function Home() {
   return (
     <>
      <div className='webbgImage'>
+    <Header/>
     <First/>
     <Second/>
     <Third/>
@@ -22,6 +27,7 @@ export default function Home() {
     <Sixth/>
     <Seventh/>
     <Eight/>
+    <Footer/>
     </div>
     </>
   )
