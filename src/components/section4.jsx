@@ -1,11 +1,13 @@
 import React from 'react'
 import customITSolutions from '../assests/Images/8-um8V0Hg-_pJjMheEhOK.avif'
+import { motion } from 'framer-motion';
+
 
 
 export default function section4() {
     return (
         <>
-            <div className='shadow-lg bg-[#1B1C1D] flex justify-normal w-[70%] mx-auto gap-16 mt-10'>
+            {/* <div className='shadow-lg bg-[#1B1C1D] flex justify-normal w-[70%] mx-auto gap-16 mt-10'>
                 <div className='w-[40%]'>
                     <img src={customITSolutions} alt='image' className=' h-full w-full' />
                 </div>
@@ -34,7 +36,66 @@ export default function section4() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+<div className="bg-gray-50 py-20">
+      <div className="w-10/12 mx-auto text-center">
+        <motion.h2
+          className="text-4xl font-bold text-gray-900 mb-6"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, type: 'spring', stiffness: 50 }}
+        >
+          Custom IT Solutions to Navigate Complexity
+        </motion.h2>
+        <motion.p
+          className="text-lg text-gray-600 mb-10"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          Designed to simplify and optimize your legal operations.
+        </motion.p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-10/12 mx-auto">
+        <motion.div
+          className="bg-gray-100 p-8 shadow-lg rounded-xl text-center hover:bg-gray-200"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, type: 'spring', stiffness: 50 }}
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Tailored Solutions</h3>
+          <p className="text-gray-600">
+            Customized for your specific legal needs.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="bg-gray-100 p-8 shadow-lg rounded-xl text-center hover:bg-gray-200"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, type: 'spring', stiffness: 50 }}
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Seamless Integration</h3>
+          <p className="text-gray-600">
+            Works seamlessly with existing systems.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="bg-gray-100 p-8 shadow-lg rounded-xl text-center hover:bg-gray-200"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, type: 'spring', stiffness: 50 }}
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Dedicated Support</h3>
+          <p className="text-gray-600">
+            Expert assistance every step of the way.
+          </p>
+        </motion.div>
+      </div>
+    </div>
         </>
     )
 }

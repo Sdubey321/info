@@ -4,11 +4,11 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont,'Prata' 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: ui-sans-serif, system-ui, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assests/Images/NY-bg-10-up.png');
+  background-image: url('./assests/Images/BG1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
