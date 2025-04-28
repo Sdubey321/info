@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { Menu, ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Header() {
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
+    <section id="Home">
     <header className="bg-gray-100 text-gray-800 shadow-lg fixed w-full z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 cursor-pointer"
+         onClick={() => navigate("/")}
+        >
           <div className="bg-yellow-500 rounded-full p-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,12 +33,12 @@ export default function Header() {
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-6 text-base">
-          {["Home", "Features", "Pricing", "Contact"].map((item) => (
+        <nav className="hidden md:flex space-x-6 text-base"  onClick={() => navigate("/")}>
+          {["Home", "Features", "Contact"].map((item) => (
             <a
               key={item}
-              href="#"
-              className="hover:text-gray-900 transition"
+              href={`#${item}`}            
+              className="hover:text-gray-900 transition cursor-pointer" 
             >
               {item}
             </a>
@@ -42,8 +48,8 @@ export default function Header() {
         {/* Call to Action */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="#"
-            className="px-5 py-2 bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-600 transition"
+            onClick={() => navigate("/form")}
+            className="px-5 py-2 bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-600 transition cursor-pointer"
           >
             Get Started
           </a>
@@ -63,16 +69,17 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-gray-100 shadow-lg">
           <nav className="flex flex-col space-y-2 p-4">
-            {["Home", "Features", "Pricing", "Contact"].map((item) => (
+            {["Home", "Features", "Contact"].map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`#${item}`} 
                 className="text-gray-800 hover:text-gray-900 transition"
               >
                 {item}
               </a>
             ))}
             <a
+              onClick={() => navigate("/form")}
               href="#"
               className="block mt-4 px-5 py-2 text-center bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-600 transition"
             >
@@ -82,5 +89,6 @@ export default function Header() {
         </div>
       )}
     </header>
+    </section>
   );
 }

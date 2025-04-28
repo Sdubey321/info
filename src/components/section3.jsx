@@ -1,10 +1,13 @@
 import React from 'react'
-import specialished from '../assests/Images/LTMZqfYax4UACQT44kbCa.avif'
 import { motion } from 'framer-motion';
+import { useNavigate } from "react-router-dom";
 
 
 
-export default function section3() {
+
+export default function Section3() {
+  const navigate = useNavigate();
+
     return (
         <>
             {/* <div className='shadow-lg bg-[#1B1C1D] flex justify-normal w-[70%] mx-auto gap-4 mt-10'>
@@ -116,6 +119,7 @@ export default function section3() {
           className="px-6 py-3 bg-transparent border-2 border-yellow-500 text-yellow-500 font-bold rounded-md hover:bg-yellow-500 hover:text-gray-900"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => navigate("/form")}
         >
           Contact Us
         </motion.button>

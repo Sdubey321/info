@@ -3,7 +3,8 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-12 px-6 md:px-12 lg:px-24">
+    <section id="Contact">
+    <footer  className="bg-gray-800 text-gray-300 py-12 px-6 md:px-12 lg:px-24">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         {/* Logo & Description */}
@@ -78,9 +79,9 @@ export default function Footer() {
             <br />
             Email: <a href="mailto:info@quantanerve.com" className="hover:text-gray-500 transition-all">info@quantanerve.com</a>
           </p>
-          <p className="text-sm mt-4">
+          {/* <p className="text-sm mt-4">
             Phone: <a href="tel:+1234567890" className="hover:text-gray-500 transition-all">+1 234 567 890</a>
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -91,5 +92,6 @@ export default function Footer() {
         </p>
       </div>
     </footer>
+    </section>
   );
 }

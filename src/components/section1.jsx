@@ -3,6 +3,7 @@ import Empowering  from '../assests/Images/JICHSr45JQxM0o8bXYKIY.avif'
 import Justice  from '../assests/Images/IMG1.png'
 import Hammer from '../assests/Images/IMG2.png'
 import { motion } from 'framer-motion';
+// import animatedStlFile from '../assests/Images/lady_justice.stl'
 import animatedStlFile from '../assests/Images/stl--Lady_justice.stl'
 import ModelViewer from './modalViewer';
 
@@ -50,8 +51,9 @@ export default function section1() {
           Simplifying legal complexities with innovative solutions and compliance tools.
         </p>
       </div>
-
-      <div>
+     <section id='Features'>
+      <div >
+      {/* className='w-3/5 mx-auto h-[700px]' */}
         <motion.img src={Justice} alt=""  className='my-0 mx-auto'
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -60,11 +62,12 @@ export default function section1() {
           stiffness: 50,
           damping: 10,
         }}/>
-        {/* <ModelViewer modelPath={animatedStlFile} */}
-       {/* /> */}
+        {/* <ModelViewer modelPath={animatedStlFile}
+        /> */}
        
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 w-10/12 mx-auto">
+      </section>
+      <div  className="grid grid-cols-1 md:grid-cols-3 gap-8 w-10/12 mx-auto">
         <div className="bg-white p-8 shadow-lg rounded-xl text-center hover:scale-105 transform transition-all duration-300">
           <h3 className="text-xl font-semibold text-gray-800 mb-4">Real-time Legal Updates</h3>
           <p className="text-gray-600">
